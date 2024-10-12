@@ -9,7 +9,7 @@ chrome.runtime.onMessage.addListener((message) => {
     // PLEASE PROVIDE YOUR NAME BELOW
     const finderName = "Will"
 
-    const webhookURL = "https://discord.com/api/webhooks/1294724465384624171/dAD00MkS52SgDXVQ6LHPtcvk2wimnmg4wIv-ep-eZSptFHXH-XXOVngLa1ddT7cDjHHM";  
+    const webhookURL = "WEBHOOK_URL";  
   
     const date = new Date();
     const formattedDate = date.toLocaleDateString("en-GB", {
