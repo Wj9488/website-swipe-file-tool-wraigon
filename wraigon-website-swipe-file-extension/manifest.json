@@ -1,0 +1,53 @@
+{
+    "manifest_version": 3,
+    "name": "Website Quick Save | Wraigon Tools",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "exclude_matches": [
+          "*://*.youtube.com/*",
+          "*://*.facebook.com/*",
+          "*://*.twitter.com/*",
+          "*://*.instagram.com/*",
+          "*://*.linkedin.com/*",
+          "*://*.discord.com/*",
+          "*://*.whatsapp.com/*",
+          "*://*.twitch.tv/*",
+          "*://*.reddit.com/*",
+          "*://*.amazon.com/*",
+          "*://*.netflix.com/*",
+          "*://*.google.com/*",
+          "*://*.gmail.com/*",
+          "*://*.yahoo.com/*",
+          "*://*.bing.com/*",
+          "*://*.microsoft.com/*",
+          "*://*.apple.com/*",
+          "*://*.github.com/*",
+          "*://*.stackoverflow.com/*",
+          "*://*.office.com/*",
+          "*://*.chatgpt.com/*",
+          "*://*.awwwards.com/*",
+          "*://*.cssdesignawards.com/*",
+          "*://*.thefwa.com/*",
+          "*://*.ft.com/*",
+          "*://*.bath.ac.uk/*",
+          "*://*.exeter.ac.uk/*"
+        ],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
+  
