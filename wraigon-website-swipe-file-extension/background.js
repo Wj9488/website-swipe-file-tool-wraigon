@@ -9,6 +9,7 @@ chrome.runtime.onMessage.addListener((message) => {
     // PLEASE PROVIDE YOUR NAME BELOW
     const finderName = "Will"
 
+    // PASTE THE WEBHOOK URL IN HERE 
     const webhookURL = "WEBHOOK_URL";  
   
     const date = new Date();
